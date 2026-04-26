@@ -1,6 +1,22 @@
-# Docs
+<h1 align="center">docs</h1>
 
-This project is a website with a left-hand side menu that allows users to navigate through different sections. The left-hand menu is generated dynamically based on [src/sections.js](./src/sections.js), which defines the structure of the menu and the URLs of the pages that the user can navigate to.
+<p align="center">
+  <strong>Lightweight static documentation site: vanilla HTML + JS, JSON-driven left-hand menu, fetch-based section loader. Optional Python helpers to scaffold sections.</strong>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Working-brightgreen" alt="Status" />
+  <img src="https://img.shields.io/badge/Vanilla-HTML_+_JS-F7DF1E?logo=javascript&logoColor=111111" alt="Vanilla HTML+JS" />
+  <img src="https://img.shields.io/badge/License-MIT-blue" alt="License" />
+</p>
+
+> **Looking for the React rewrite?** See [`docs-react`](https://github.com/hec-ovi/docs-react) for a Vite + React version of the same idea with markdown rendering and dark mode.
+
+---
+
+## What this is
+
+A lightweight static documentation website with a left-hand side menu that allows users to navigate through different sections. The left-hand menu is generated dynamically based on [src/sections.js](./src/sections.js), which defines the structure of the menu and the URLs of the pages that the user can navigate to.
 
 The main.js file contains JavaScript functions that handle the loading and display of the pages. The populateMenu() function generates the menu HTML based on the "sections" JSON data, while the loadContent() function fetches the content of the page and displays it on the right-hand side of the site (For run locally needs to disable CORS).
 
@@ -51,3 +67,9 @@ Experimental Python script that generates a sections and adds it to the sections
 ## Contributing
 
 Please submit any issues or pull requests on the GitHub repository.
+
+---
+
+## License
+
+[MIT](LICENSE) for original code in this repository (vanilla JS source under src/, Python scaffolding helpers, sample HTML sections, and CSS). Bundled libraries under libs/ and webfonts under webfonts/ retain their own upstream licenses; this repository does not redistribute them outside of standard CDN-style inclusion.
